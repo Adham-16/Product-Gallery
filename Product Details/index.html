@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container text-center pb-3">
+      <h1 class="section-title-head">Product Details</h1>
+
+      <div id="productDetails" class="row">
+        <div class="col-md-6 product-image">
+          <div class="slider-btns">
+            <button id="prevBtn" onclick="changeImage(-1)">Prev</button>
+            <div id="imageSlider" class="gallery"></div>
+
+            <button id="nextBtn" onclick="changeImage(1)">Next</button>
+          </div>
+        </div>
+
+        <div class="col-md-6 product-details">
+          <h2 id="productTitle"></h2>
+
+          <div class="row">
+            <div class="col-12">
+              <p>
+                <span class="section-title">Price:</span> $<span
+                  id="productPrice"
+                ></span>
+              </p>
+              <p>
+                <span class="section-title">Description:</span>
+                <span id="productDescription"></span>
+              </p>
+              <div>
+                <div class="d-inline-block px-5">
+                  <p>
+                    <span class="section-title">Category:</span>
+                    <span id="productCategory"></span>
+                  </p>
+                  <p>
+                    <span class="section-title">Discount:</span>
+                    <span id="productDiscount"></span>
+                  </p>
+                </div>
+                <div class="d-inline-block px-5">
+                  <p>
+                    <span class="section-title">Rating:</span>
+                    <span id="productRating"></span> / 5
+                  </p>
+                  <p>
+                    <span class="section-title">Stock:</span>
+                    <span id="productStock"></span>
+                  </p>
+                </div>
+              </div>
+
+              <p>
+                <span class="section-title">Warranty:</span>
+                <span id="productWarranty"></span>
+              </p>
+              <p>
+                <span class="section-title">Shipping Info:</span>
+                <span id="productShipping"></span>
+              </p>
+              <p>
+                <span class="section-title">Availability:</span>
+                <span id="productAvailability"></span>
+              </p>
+              <p>
+                <span class="section-title">Return Policy:</span>
+                <span id="productReturnPolicy"></span>
+              </p>
+              <p>
+                <span class="section-title">Minimum Order Quantity:</span>
+                <span id="productMinOrder"></span>
+              </p>
+            </div>
+          </div>
+          <button class="back-btn" onclick="window.location.href='/index.html'">
+            Back to Products
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
