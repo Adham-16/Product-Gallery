@@ -77,9 +77,7 @@ function displaySearchResults(products) {
 }
 
 function viewProduct(id) {
-  // window.location.href = `/Product Details/index.html?id=${id}`;
-  console.log(id);
-
+  location.href = `Product-Details/Details.html?id=${id}`;
 }
 
 function updatePagination(totalProducts = allProducts.length) {

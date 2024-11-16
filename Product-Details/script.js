@@ -1,5 +1,4 @@
 const productId = new URLSearchParams(window.location.search).get("id");
-
 console.log("Product ID:", productId);
 
 let currentImageIndex = 0;
