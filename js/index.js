@@ -78,6 +78,7 @@ function displaySearchResults(products) {
 
 function viewProduct(id) {
   location.href = `Product-Details/Details.html?id=${id}`;
+
 }
 
 function updatePagination(totalProducts = allProducts.length) {
